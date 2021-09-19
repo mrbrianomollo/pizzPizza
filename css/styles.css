@@ -1,0 +1,17 @@
+.nav {
+  width: 100%;
+}
+.logo {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.logo a {
+  color: #2596be;
+  font-size: 35px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+.logo a span {
+  color: #ee6352;
+}
