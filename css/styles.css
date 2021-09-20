@@ -15,24 +15,51 @@
   color: #ee6352;
 }
 .menu {
-    font-family: ubuntu mono, 'Courier New', Courier, monospace;
-    float: right;
+  font-family: ubuntu mono, "Courier New", Courier, monospace;
+  float: right;
 }
 
-.menu li{
-    display: inline;
+.menu li {
+  display: inline;
 }
 
-.menu a{
-    color:#2596be;
-    display: inline-block;
-    text-align: center;
-    padding: 14px 16px;
-    margin-top: 20px;
-    font-size: 20px !important;
-    }
+.menu a {
+  color: #2596be;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 20px;
+  font-size: 20px !important;
+}
 
-.menu a:hover{
-    background-color: #484d6d;
-    color: #efe9f4;
+.menu a:hover {
+  background-color: #484d6d;
+  color: #efe9f4;
+}
+.pizz {
+  color: #2596be;
+  font-size: 50px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+.pizz span {
+  color: #ee6352;
+}
+.phrase{
+    text-align: left;
+}
+.phrase p {
+    font-family: Bad Script;
+    font-weight: bold;
+    font-size: 25px;
+    color: #57A773;
+}
+.landing {
+  background-image: url("../img/pizza\ wallpaper.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 10%;
 }
