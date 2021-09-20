@@ -19,10 +19,6 @@ body {
 .logo a span {
   color: #ee6352;
 }
-.menu {
-  font-family: ubuntu mono, "Courier New", Courier, monospace;
-  float: right;
-}
 
 .pizz {
   font-size: 50px;
