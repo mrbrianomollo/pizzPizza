@@ -5,6 +5,7 @@ function Pizza(name) {
     this.name = name;
     this.price = 0;
     this.quantity = 1;
+    this.tops = 2;
     this.toppings = [];
 }
 
@@ -19,6 +20,13 @@ Pizza.prototype.setCrust = function (name) {
     const pizzaCrust = pizzaCrusts.find((pizzaCrust) => pizzaCrust.name == name);
     if (pizzaCrust) {
         this.crust = pizzaCrust;
+        this.calculateTotal();
+    }
+};
+Pizza.prototype.setTops = function (name) {
+    const pizzaTops = pizzaTops.find((pizzaTops) => pizzaTops.name == name);
+    if (pizzaTops) {
+        this.tops = pizzaTops;
         this.calculateTotal();
     }
 };
@@ -41,6 +49,9 @@ Pizza.prototype.calculateTotal = function () {
 
     if (this.crust) {
         this.price = this.price + this.crust.price;
+    }
+    if (this.tops) {
+        this.price = this.price + this.tops.price;
     }
 
     this.price += this.toppings.length * toppingPrice;
