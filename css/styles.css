@@ -1,15 +1,20 @@
-.nav {
+body {
   width: 100%;
+  height: 100%;
+  background-color:#272727;
+  color: #EFEEE7;
 }
+
+
 .logo {
   margin-top: 20px;
 }
 .logo a {
-  color: #2596be;
   font-size: 50px;
   font-weight: bold;
   list-style: none;
   text-decoration: none;
+  color: #efeee7;
 }
 .logo a span {
   color: #ee6352;
@@ -19,25 +24,7 @@
   float: right;
 }
 
-.menu li {
-  display: inline;
-}
-
-.menu a {
-  color: #2596be;
-  display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  margin-top: 20px;
-  font-size: 20px !important;
-}
-
-.menu a:hover {
-  background-color: #484d6d;
-  color: #efe9f4;
-}
 .pizz {
-  color: #2596be;
   font-size: 50px;
   font-weight: bold;
   list-style: none;
@@ -47,16 +34,16 @@
   color: #ee6352;
 }
 .phrase{
-    text-align: left;
+    text-align: right;
 }
 .phrase p {
     font-family: Bad Script;
     font-weight: bold;
     font-size: 25px;
-    color: #57A773;
+    
 }
 .landing {
-  background-image: url("../img/pizza\ wallpaper.jpg");
+  background-image: url("../img/2020Food___Pizza_Pizza_with_slices_of_bacon_on_a_blackboard_on_a_black_background_142555_.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
