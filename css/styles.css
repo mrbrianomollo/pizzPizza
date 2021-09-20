@@ -46,3 +46,27 @@ body {
   text-align: center;
   padding: 10%;
 }
+.text-bold {
+  font-weight: bold;
+}
+
+tbody {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+#location-input-details {
+  display: none;
+}
+
+.delivery-option {
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #37749a;
+}
+
+a:hover {
+  color: #37749a;
+}
