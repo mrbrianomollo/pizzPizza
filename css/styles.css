@@ -3,7 +3,6 @@
 }
 .logo {
   margin-top: 20px;
-  margin-left: 40px;
 }
 .logo a {
   color: #2596be;
@@ -29,10 +28,11 @@
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
+    margin-top: 20px;
     font-size: 20px !important;
     }
 
 .menu a:hover{
-    background-color: #ee6352;
+    background-color: #484d6d;
     color: #efe9f4;
 }
