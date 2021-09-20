@@ -47,56 +47,42 @@
     </div>
     </section>
         <!-- order section -->
-        <div id="order-section">
+        <div id="order-section" class="order my-5">
           <div class="container">
               <div class="row">
-                  <h2>Place your order</h2>
-                  <div class="col-md-12 shadow">
-                    <form id="order-form">
-                  <div class="col-md 3">
-                    <div class="form-group">
-                      <label for="">Select Pizza <span class="text-danger">*</span></label>
-                      <select name="pizza" id="pizza" class="form-control">
-                          <option value="" selected disabled>--Select Pizza--</option>
-                      </select>
+                  <h2>Place Your Order</h2>
+                  <div class="col-md-5 shadow p-4">
+                      <p class="text-center text-danger" id="error"></p>
+                      <form id="order-form">
+                          <div class="form-group">
+                              <label for="">Select Pizza <span class="text-danger">*</span></label>
+                              <select name="pizza" id="pizza" class="form-control">
+                                  <option value="" selected disabled>--Select Pizza--</option>
+                              </select>
+                          </div>
+                          <div class="form-group mt-2">
+                              <label for="">Size <span class="text-danger">*</span></label>
+                              <select name="size" id="size" class="form-control">
+                                  <option value="" selected disabled>--Select pizza sizes--</option>
+                              </select>
+                          </div>
+                          <div class="form-group mt-2">
+                              <label for="">Crust <span class="text-danger">*</span></label>
+                              <select name="crust" id="crust" class="form-control">
+                                  <option value="" selected disabled>--Select Crust--</option>
+                              </select>
+                          </div>
+                          <div class="form-group mt-2">
+                              <p>Select Your Toppings at sh. 50 each</p>
+                              <div class="row toppings">
+  
+                              </div>
+                          </div>
+                          <div class="mt-4 text-end">
+                              <button class="btn btn-primary">Add to Cart <i class="fa fa-plus-circle"></i></button>
+                          </div>
+                      </form>
                   </div>
-
-                  </div>
-                  <div class="col-md 3">
-                    <div class="form-group mt-2">
-                      <label for="">Size <span class="text-danger">*</span></label>
-                      <select name="size" id="size" class="form-control">
-                          <option value="" selected disabled>--Select pizza sizes--</option>
-                      </select>
-                  </div>
-
-                  </div>
-                  <div class="col-md 3">
-                    <div class="form-group mt-2">
-                      <label for="">Crust <span class="text-danger">*</span></label>
-                      <select name="crust" id="crust" class="form-control">
-                          <option value="" selected disabled>--Select Crust--</option>
-                      </select>
-                  </div>
-
-                  </div>
-                  <div class="col-md 3">
-                    <div class="form-group mt-2">
-                      <p>Select Your Toppings at sh. 50 each</p>
-                      <div class="row toppings">
-
-                      </div>
-                  </div>
-
-                  </div>
-                  <p class="text-center text-danger" id="error"></p>
-                  <div class="mt-4 text-end">
-                    <button class="btn btn-primary">Add <i class="fa fa-plus-circle"></i></button>
-                </div>
-                  </form>
-                  </div>
-                  </div>
-
   
                   <div class="col-md-7 shadow">
                       <table class="table table-responsive order-table">
@@ -104,17 +90,18 @@
                               <tr>
                                   <th>Name</th>
                                   <th>Size</th>
+                                  <th width="33">Quantity</th>
                                   <th>Crust</th>
                                   <th>Topping</th>
-                                  <th width="33">Quantity</th>
+                                  
                                   <th>Total</th>
                               </tr>
                           </thead>
                           <tbody>
                               <tr>
                                   <td colspan="6" class="empty-cart text-center">
-                                      <img src="img/empty-cart.png" alt="Empty cart image"> <br>
-                                      Your cart is empty!
+                                      <img src="img/empty cart.png" alt="Empty cart image"> <br>
+                                      Add to cart to place your order!
                                   </td>
                               </tr>
                           </tbody>
