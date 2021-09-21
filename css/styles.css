@@ -74,8 +74,10 @@ a:hover {
   color: #EFEEE7;
 }
 .btn {
-  background-color:#0f6efd;
   font-weight: bold;
+  background-color:#24a0ed;
+  color: black;
+  outline: none;
 }
 
 .btn:hover {
@@ -85,4 +87,7 @@ a:hover {
 .popup {
   background-color:#272727;
 
+}
+.button-section{
+  display: inline-block;
 }
