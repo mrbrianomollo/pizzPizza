@@ -91,3 +91,9 @@ a:hover {
 .button-section{
   display: inline-block;
 }
+.warning{
+  color: red;
+}
+.warn-btn{
+  background-color: red;
+}
