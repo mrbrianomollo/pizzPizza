@@ -110,12 +110,6 @@
                   <th>Toppings</th>
                   <th width="10">Quantity</th>
                   <th>Total</th>
-                  <th><button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button></th>
                 </tr>
               </thead>
               <tbody class="carrt">
@@ -143,8 +137,6 @@
       </div>
     </div>
 
-    <!-- modal for selecting delivery method -->
-    <!-- Modal -->
     <div
       class="modal fade"
       id="deliveryMethodModal"
@@ -166,7 +158,6 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- input modal -->
             <div id="select-delivery-method">
               <p>
                 SHIPPING METHOD
@@ -267,7 +258,7 @@
                     Ensure you have entered the correct address before placing your order. We charge a flat rate of <span style="font-weight:bold">KES 200</span> for delivery.
                   </p>
                   <div class="modal-footer">
-                    <button type="button" class="btn warn-btn" data-bs-dismiss="modal">
+                    <button type="reset" class="btn warn-btn" data-bs-dismiss="modal">
                       Cancel
                     </button>
                     <button type="submit" class="btn" id="checkout-button">
@@ -277,7 +268,6 @@
                 </form>
               </div>
             </div>
-            <!-- div to display the summary of all the orders -->
             <div id="summary-order">
               <div class="delivery-head"></div>
               <div class="delivery-bottom"></div>
@@ -286,6 +276,38 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container-fluid bg-default" id="contact">
+        <div class="controls-top "> 
+          </div>
+        <div class="row" id="contactdetails">
+          <div class="col-md-1">
+             
+          </div>
+          <div class="col-md-3 text-justify">
+            <h2>Location</h2>
+            <p>PizzPizza</p>
+            <p>Sonalux Hse | Moi Avenue</p>
+            <p>Nairobi </p>
+          </div>
+          <div class="col-md-3">
+            <h2>Customer Care</h2>
+             <p>xyz@gmail.com</p>
+             <p>Tel: 0712987654</p> 
+          </div>
+          <div class="col-md-4">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="400" height="150" id="gmap_canvas" src="https://maps.google.com/maps?q=sonalux&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:150px;width:400px;}</style><a href="https://www.embedgooglemap.net">embedding google maps into website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:150px;width:400px;}</style></div></div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="container text-center footer">
+            <p>&copy; 2021 | PizzPizza</p>
+          </div>
+        </div>
+    </div>
+    </footer>
 
   </body>
 </html>
