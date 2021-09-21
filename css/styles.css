@@ -73,3 +73,12 @@ a:hover {
 .carrt{
   color: #EFEEE7;
 }
+.btn {
+  background-color:#0f6efd;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #37749a;
+  color: white;
+}
