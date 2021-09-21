@@ -293,15 +293,16 @@ $(function () {
                                 <ol class="list-group">
                                     <li class="list-group-item d-flex justify-content-between align-items-start">
                                         <div class="ms-2 me-auto">
-                                            <div class="fw-bold">${pizza.name}(${pizza.size.size})</div>
-                                            Crust - ${pizza.crust.name} <br>
-                                            Toppings - ${pizza.toppings.join(", ")}
+                                            ${pizza.name} <br> ${pizza.size.size} <br> ${pizza.crust.name} <br> ${pizza.toppings.join(", ")}
                                         </div>
                                         <span class="badge bg-primary rounded-pill">${pizza.quantity}</span>
                                     </li>
                                 </ol>
+                                KES.${getTotalPlusDeliveryFee} 
                             </div>
+                            
                         </div>
+                        
                        </div>
                         `);
                     });

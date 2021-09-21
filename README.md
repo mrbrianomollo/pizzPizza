@@ -16,23 +16,34 @@
 
 ## DESCRIPTION
 
-- 
+- This is a pizza ordering web application for a pizza company known as PizzPizza where their customers can order for pizza.
 
 ## Deployment
 
 - You can vist the site directly by clicking [HERE]()
-- You can view the source code on github [HERE]()
+- You can view the source code on github [HERE](https://github.com/mrbrianomollo/pizzPizza.git)
 
 ## BDD
 
-> 
-> 
-- NB : ``
+> The website will require the user to select:
+i) their prefered pizza, size, crust and toppings
+ii) on checkout they will need to select their prefered shipping method
+iii) after which they will input their address and place their order 
 
 ## Project Screenshot
 
-<img>
--
+<img src="img/1.png">
+- This is the landing page with a clickable button that directs you to the order section of the page.
+<img src="img/2.png">
+- This is the order section where the you are required to enter your details.
+<img src="img/3.png">
+- This is the footer section that contains the contact details and location of the business.
+<img src="img/4.png">
+- On clicking the checkout button the user will be prompted to select their delivery option. if they fail to do so they will get an alert that it is mandatory.
+<img src="img/5.png">
+- This is where you key in your delivery details.
+<img src="img/6.png">
+- Succesfull order placement notification.
 
 ## Technologies Used
 
@@ -43,33 +54,17 @@
 
 ## Bugs
 
-
+- You can not clear your selection after order placement
+- You can not remove the selected item from the cart unless you refresh
 
 ## Acknowledgement
 
-I would like to thank the following for their assistance through out this project.
+I would like to thank Moringa for giving me this opportunity to get myself equipped with this precious knowledge. 
 
-- 
-- 
-- 
-
-## Licence
-
-The MIT License (MIT)
-
-Copyright (c) 2021 Brian Ongati.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-@mrbrianomollo
 
 ## Contacts
 
-Incase of any feedback you can reach me through my personal contacts:
+Incase of any feedback or contribution to fix the bugs you can reach me through my personal contacts:
 
 - mrbrianomollo@gmail.com
 - 0723670846
