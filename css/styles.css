@@ -81,7 +81,6 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: #37749a;
   color: white;
 }
 .popup {
@@ -96,4 +95,7 @@ a:hover {
 }
 .warn-btn{
   background-color: red;
+}
+.warn-btn:hover{
+  color: white;
 }

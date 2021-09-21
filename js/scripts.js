@@ -46,15 +46,15 @@ Pizza.prototype.calculateTotal = function () {
 };
 const pizzaSizes = [
   {
-    size: "small",
+    size: "Small",
     price: 500,
   },
   {
-    size: "medium",
+    size: "Medium",
     price: 750,
   },
   {
-    size: "large",
+    size: "Large",
     price: 950,
   },
 ];
@@ -64,7 +64,7 @@ const pizzaCrusts = [
     price: 100,
   },
   {
-    name: "Neapolitan Crust",
+    name: "Vegan-friendly",
     price: 100,
   },
   {
@@ -72,8 +72,8 @@ const pizzaCrusts = [
     price: 100,
   },
 ];
-// check toppings later
-const pizzaToppings = ["Mushrooms", "Pineapple", "Bacon"];
+const pizzaToppings = 
+["Extra Pepperoni-150", "Extra Chicken Tikka-150", "Extra BBQ Chicken-150"];
 const pizzas = [
   { name: "Hawaiian" },
   { name: "Pepperoni" },
@@ -141,7 +141,7 @@ $(function () {
       !selectedCrust ) 
       {
       $("#error").text(
-        "** Please ensure that you have selected all options: pizza, size crust and toppings** "
+        "(*) required to proceed!"
       );
       return;
     } else {
@@ -183,10 +183,7 @@ $(function () {
                 <td>Ksh ${pizza.price}</td>
             </tr>
         `);
-      // show checkout button
       $(".delivery-button").show();
-      // console.log(pizza);
-      //update grand total
       calculateGrandTotal();
     });
   });
@@ -200,33 +197,27 @@ $(function () {
       $(this)
         .parent()
         .next()
-        .html(`Ksh <span class="text-bold">${pizza.price}</span> `);
+        .html(`KES <span class="text-bold">${pizza.price}</span> `);
     }
 
     calculateGrandTotal();
   });
-    // delivery modal
     $("#delivery-form").on("submit", function (e) {
-        //prevent default action
         e.preventDefault();
-        // check if the user has selected the radio button
         const selectd = $("input[name='deliveryMethod']:checked");
         if (selectd.val() == undefined) {
             $(".delivery-option").html("<p class='text-danger'>** Please select the delivery method **</p>");
             return;
         } else {
             $(".delivery-option").text("");
-            // check which radio button was selected
             if (selectd.val() == "delivery") {
                 $("#location-input-details").show();
-                // user inputs variables
                 const customerName = $("#customerName").val();
                 const customerPhone = $("#customerPhone").val();
                 const customerLocation = $("#customerLocation").val();
                 const additionalInfo = $("#additionalInfo").val();
-                // validate user inputs
                 if (!customerName || !customerPhone || !customerLocation) {
-                    $(".error-delivery-location").text("Fill in all input fields with * to proceed!")
+                    $(".error-delivery-location").text("(*) required to proceed!")
                     return;
                 } else {
                     $(".error-delivery-location").text("");
@@ -236,22 +227,21 @@ $(function () {
                     cart.forEach((pizza) => {
                         total += pizza.price;
                     });
-                    const getTotalPlusDeliveryFee = total + 128;
+                    const getTotalPlusDeliveryFee = total + 200;
                     console.log(getTotalPlusDeliveryFee);
                     console.log(cart);
                     $("#select-delivery-method").hide();
                     $(".delivery-head").append(`
-                    <div class="alert alert-success" role="alert">Hello ${customerName}. Order successfully processed. Your order will be delivered to your location(${customerLocation})🙂</div>
+                    <div class="alert alert-success" role="alert">Order place successfuly. It will be prepared and delivered to ${customerLocation}. Thank you ${customerName} for choosing PizzPizza</div>
                         <div class="d-flex justify-content-between">
                             <div>
-                                <h5>Order Summary 😇</h5>
+                                <h5>Order Summary</h5>
                             </div>
                             <div>
                                 <p class="color-palace float-right">Total Ksh <span class="text-bold">${getTotalPlusDeliveryFee}</span></p>
                             </div>
                         </div>
                     `);
-                    //loop and append
                     cart.forEach((pizza, cartIndex) => {
                         $(".delivery-bottom").append(`
                         <div>
@@ -275,7 +265,6 @@ $(function () {
 
                 }
                 calculateGrandTotal()
-                // $("#deliveryMethodModal").hide();
             } else if (selectd.val() == "pickup") {
                 function calculateGrandTotal() {
                     let total = 0;
@@ -286,17 +275,16 @@ $(function () {
                     console.log(getTotalPlusDeliveryFee);
                     $("#select-delivery-method").hide();
                     $(".delivery-head").append(`
-                    <div class="alert alert-success" role="alert">Hello. Order successfully processed. Your order will be delivered to your location 🙂</div>
+                    <div class="alert alert-success" role="alert">Your order has been placed successfuly. It will be prepared and you'll be notified once it's read for pickup. Thank you for choosing PizzPizza</div>
                         <div class="d-flex justify-content-between">
                             <div>
-                                <h5>Order Summary 😇</h5>
+                                <h5>Order Summary</h5>
                             </div>
                             <div>
                                 <p class="color-palace float-right">Total Ksh <span class="text-bold">${getTotalPlusDeliveryFee}</span></p>
                             </div>
                         </div>
                     `);
-                    //loop and append
                     cart.forEach((pizza, cartIndex) => {
                         $(".delivery-bottom").append(`
                         <div>
