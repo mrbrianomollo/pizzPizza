@@ -4,6 +4,20 @@ body {
   background-color:#272727;
   color: #EFEEE7;
 }
+h1, h2, h3, h4{
+  font-family: amaranth,sans-serif;
+  color: #BFB1AA;
+}
+
+h2 {
+  text-align: center;
+}
+h3{
+  margin-top: 10px;
+}
+h5 {
+  text-align: center;
+}
 
 
 .logo {
@@ -14,7 +28,7 @@ body {
   font-weight: bold;
   list-style: none;
   text-decoration: none;
-  color: #efeee7;
+  color: #BFB1AA;
 }
 .logo a span {
   color: #ee6352;
@@ -50,10 +64,7 @@ body {
   font-weight: bold;
 }
 
-tbody {
-  font-size: 15px;
-  text-transform: capitalize;
-}
+
 #location-input-details {
   display: none;
 }
@@ -62,14 +73,7 @@ tbody {
   font-size: 13px;
 }
 
-a {
-  text-decoration: none;
-  color: #37749a;
-}
 
-a:hover {
-  color: #37749a;
-}
 .carrt{
   color: #EFEEE7;
 }
