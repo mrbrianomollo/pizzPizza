@@ -8,7 +8,6 @@
 - Technologies used
 - Bugs
 - Acknowledgement
-- Licence
 - Contacts
 - Author
 
@@ -20,7 +19,7 @@
 
 ## Deployment
 
-- You can vist the site directly by clicking [HERE]()
+- You can vist the site directly by clicking [HERE](https://mrbrianomollo.github.io/pizzPizza/)
 - You can view the source code on github [HERE](https://github.com/mrbrianomollo/pizzPizza.git)
 
 ## BDD
